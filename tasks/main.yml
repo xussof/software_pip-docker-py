@@ -1,0 +1,7 @@
+---
+- name: Installing docker-py packages using pip
+  become: true
+  pip:
+    name: "docker-py"
+    state: present
+    executable: pip3
